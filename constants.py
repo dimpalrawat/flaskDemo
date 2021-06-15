@@ -1,0 +1,1 @@
+MYSQL_CONNECTION_STRING='mysql+pymysql://root:dimpal123@172.17.0.2/mydbd'
