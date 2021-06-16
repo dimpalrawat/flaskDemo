@@ -1,1 +1,15 @@
-MYSQL_CONNECTION_STRING='mysql+pymysql://root:dimpal123@172.17.0.2/mydbd'
+import os
+
+
+user = os.environ.get('MYSQL_USER')
+password = os.environ.get('MYSQL_PASSWORD')
+db = os.environ.get('MYSQL_DATABASE')
+host = os.environ.get('db_endpoint_HOST')
+
+print(user)
+print(password)
+print(db)
+print(host)
+
+
+CONNECTION_STRING = "mysql+pymysql://"+user+":"+password+"@"+host+"/"+db
